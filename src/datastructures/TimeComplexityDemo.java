@@ -14,7 +14,6 @@ public class TimeComplexityDemo {
 		int sumTwo = tcdSecond.findSumLoop(99999);
 		System.out.println(sumTwo);
 		System.out.println("Time taken - " + (System.currentTimeMillis() - nowAgain) + " milliseconds");
-
 	}
 
 	public int findSumLoop(int n) {
