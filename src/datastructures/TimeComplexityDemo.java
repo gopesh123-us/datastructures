@@ -5,13 +5,14 @@ public class TimeComplexityDemo {
 	public static void main(String[] args) {
 		double now = System.currentTimeMillis();
 		TimeComplexityDemo tcdFirst = new TimeComplexityDemo();
-		int sumOne = tcdFirst.findSum(99999);
+		int nuturalNums = 100;
+		int sumOne = tcdFirst.findSum(nuturalNums);
 		System.out.println(sumOne);
 		System.out.println("Time taken - " + (System.currentTimeMillis() - now) + " milliseconds");
 
 		double nowAgain = System.currentTimeMillis();
 		TimeComplexityDemo tcdSecond = new TimeComplexityDemo();
-		int sumTwo = tcdSecond.findSumLoop(99999);
+		int sumTwo = tcdSecond.findSumLoop(nuturalNums);
 		System.out.println(sumTwo);
 		System.out.println("Time taken - " + (System.currentTimeMillis() - nowAgain) + " milliseconds");
 	}
